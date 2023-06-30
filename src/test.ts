@@ -1,6 +1,5 @@
-interface lengthWise {
-    length: number;
-}
+import { lengthWise } from './interface/interface';
+import { GenericIdentityFn } from './interface/interface';
 
 function identity1<T extends lengthWise>(arg: T): T {
     console.log(arg.length);
@@ -9,9 +8,6 @@ function identity1<T extends lengthWise>(arg: T): T {
 
 let out = identity1({ length: 10, value: 3 });
 
-interface GenericIdentityFn<Type> {
-    (arg: Type): Type;
-}
 
 function identity<Type>(arg: Type): Type {
     return arg;

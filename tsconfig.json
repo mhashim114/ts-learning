@@ -3,7 +3,8 @@
         "target": "ES6",
         "outDir": "build",
         "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
+        "module": "CommonJS"
     },
     "include": [
         "src/**/*"
