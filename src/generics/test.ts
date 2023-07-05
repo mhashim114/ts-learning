@@ -20,6 +20,13 @@ type FinjaData = {
     mobile: string
 }
 
+type MuawinData = {
+    name: string,
+    cnic: string,
+    mobile: string,
+    date: string
+}
+
 
 const finjaData: FinjaData = {
     name: "zyx",
@@ -27,11 +34,11 @@ const finjaData: FinjaData = {
     mobile: "+92345"
 }
 
-const muawinData = {
+const muawinData: MuawinData = {
     name: "zyx",
     cnic: '42465',
     mobile: "+92345",
-    data: '14/4/2023'
+    date: '14/4/2023'
 }
 
 const result = submitKyc(muawinData);
