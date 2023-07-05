@@ -1,5 +1,5 @@
-import { lengthWise } from './interface/interface';
-import { GenericIdentityFn } from './interface/interface';
+import { lengthWise } from '../interface/interface';
+import { GenericIdentityFn } from '../interface/interface';
 interface KycData<T> {
     status: boolean,
     message: string,
